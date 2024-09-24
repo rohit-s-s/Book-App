@@ -1,0 +1,11 @@
+.root {
+    min-height: 64px;
+    min-width:340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    padding-left: 24px;
+    padding-right: 24px;
+}

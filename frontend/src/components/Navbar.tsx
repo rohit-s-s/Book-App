@@ -6,21 +6,27 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
 type Navbar = {
-    Title:string,
-    destination?:string,
-    action?:string
-}
+  Title: string;
+  destination?: string;
+  action?: string;
+};
 
-export default function Navbar({ Title, destination="/", action="Go Back" }:Navbar) {
+export default function Navbar({
+  Title,
+  destination = "/",
+  action = "Go Back",
+}: Navbar) {
   return (
-        <Box sx={{ flexGrow: 1 }}>
+    <Box>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {Title}
           </Typography>
           <Link to={destination}>
-            <Button color="inherit" style={{color:"white"}}>{action}</Button>
+            <Button color="inherit" style={{ color: "white" }}>
+              {action}
+            </Button>
           </Link>
         </Toolbar>
       </AppBar>

@@ -1,6 +1,6 @@
 import useFetch from "../Hooks/useFetch";
-import BasicTable from "../components/BasicTable";
 import Navbar from "../components/Navbar";
+import SimpleTable from "../components/SimpleTable";
 
 const Home = () => {
   const {data, isSuccess, isError,error,isLoading} = useFetch();
@@ -11,7 +11,7 @@ const Home = () => {
     return (
       <>
       <Navbar Title="Book info" action="Add books" destination="/form"/>
-      <BasicTable data={data}/>
+      <SimpleTable data={data}/>
       </>
     );
   }
