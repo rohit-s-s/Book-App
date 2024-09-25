@@ -9,7 +9,6 @@
   min-width: 320px;
   min-height: 80vh;
   justify-content: center;
-
 }
 
 .tableroot {
@@ -19,7 +18,6 @@
 }
 
 .table {
-
   min-width: 340;
 }
 
@@ -27,5 +25,3 @@
   padding-right: 4;
   padding-left: 5;
 }
-
-

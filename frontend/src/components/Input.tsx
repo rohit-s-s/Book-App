@@ -3,7 +3,10 @@ import { FormValues } from "../types/util";
 import { TextField } from "@mui/material";
 
 const Input = ({ type, name, placeholder }: FormValues) => {
-  const { register,formState: { errors } } = useFormContext();
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
 
   return (
     <>

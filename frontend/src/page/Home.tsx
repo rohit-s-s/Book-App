@@ -3,15 +3,13 @@ import Navbar from "../components/Navbar";
 import SimpleTable from "../components/SimpleTable";
 
 const Home = () => {
-  const {data, isSuccess, isError,error,isLoading} = useFetch();
-  
+  const { data, isSuccess, isError, error, isLoading } = useFetch();
 
   if (isSuccess) {
-    
     return (
       <>
-      <Navbar Title="Book info" action="Add books" destination="/form"/>
-      <SimpleTable data={data}/>
+        <Navbar Title="Book info" action="Add books" destination="/form" />
+        <SimpleTable data={data} />
       </>
     );
   }

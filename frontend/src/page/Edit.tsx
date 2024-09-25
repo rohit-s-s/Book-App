@@ -6,7 +6,7 @@ import useFetch from "../Hooks/useFetch";
 
 const Edit = () => {
   const { id } = useParams();
-  const { data,isSuccess, isLoading, isError, error } = useFetch(id);
+  const { data, isSuccess, isLoading, isError, error } = useFetch(id);
 
   const { mutate } = useUpdate({ method: "put", param: id });
   if (isSuccess) {
