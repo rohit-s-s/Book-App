@@ -15,13 +15,13 @@ const useUpdate = ({ param, method }: Update) => {
   const Api = () => {
     const ApiMethods = {
       post: async (newData: Value) => {
-        await axios.post("http://localhost:3001/books", newData);
+        await axios.post("http://localhost:5000/books", newData);
       },
       put: async (newData: Value) => {
-        await axios.put(`http://localhost:3001/books/${param}`, newData);
+        await axios.put(`http://localhost:5000/books/${param}`, newData);
       },
-      delete: async (userData:Value) => {
-        await axios.delete(`http://localhost:3001/books/${userData._id}`);
+      delete: async (userData: Value) => {
+        await axios.delete(`http://localhost:5000/books/${userData._id}`);
       },
     };
     return ApiMethods[method];
